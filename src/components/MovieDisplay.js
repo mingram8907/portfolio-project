@@ -1,3 +1,5 @@
+
+
 function MovieDisplay(props) {
     const { movie } = props;
     if(movie?.Error){
@@ -8,7 +10,9 @@ function MovieDisplay(props) {
         return (
             <div style={{marginLeft: '16.25%'}}>
                 <h4>{movie.Title} ({movie.Year})</h4>
-                <p>Box Office: {movie.BoxOffice}</p>
+                <strong>Box Office: {movie.BoxOffice}</strong>
+                <br />
+                <img src={movie.Poster} alt={movie.Title} />
             </div>
         )
     }

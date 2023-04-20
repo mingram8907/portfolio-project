@@ -2,7 +2,7 @@
 function About() {
     return (
         <div className="container">
-            <div style={{alignItems: 'center', marginTop: '45%', marginBottom: '5%'}}>
+            <div style={{alignItems: 'center', marginTop: '4%', marginBottom: '5%'}}>
                 <h1><strong>About Me</strong></h1>
             </div>
         

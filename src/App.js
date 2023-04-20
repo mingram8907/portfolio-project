@@ -1,9 +1,12 @@
 import './App.css';
 
-// import { Routes, Route} from 'react-router-dom'
+import { Routes, Route} from 'react-router-dom'
 import { useState, useEffect } from 'react';
 import { getMovie } from './services/omdbapi'
 
+// import Home from "./pages/Home";
+// import About from "./pages/About";
+// import Projects from "./pages/Projects";
 
 
 import Homepage from './components/Homepage';
@@ -32,13 +35,24 @@ function App() {
       <div>
         <NavBar />
         <div>
-          <Homepage /> 
-          <About />
-          <Projects />
-            <Form movieSearch={getMovie} setMovie={setMovie}/>
-            <MovieDisplay movie={movie}/>
+          <Routes>
+              <Route path='/' element={<Homepage />} />
+              {/* <Homepage />  */}
+
+              <Route path='/about' element={<About />} />
+              {/* <About /> */}
+
+              <Route path='/projects' element={<Projects />} />
+              {/* <Projects /> */}
+
+              <Route path='/projects/movieform' element={<Form movieSearch={getMovie} setMovie={setMovie} />} />
+
+              <Route path='/projects/movieform/favoritemovie' element={<MovieDisplay movie={movie} />} />
+                {/* <Form movieSearch={getMovie} setMovie={setMovie}/>
+                <MovieDisplay movie={movie}/> */}
+            {/* <Footer /> */}
+          </Routes>
         </div>
-        {/* <Footer /> */}
       </div>
   
   );
