@@ -13,7 +13,7 @@ import Homepage from './components/Homepage';
 import About from './components/About';
 import Projects from './components/Projects';
 import NavBar from './components/NavBar';
-import Footer from './components/Footer';
+// import Footer from './components/Footer';
 import Form from './components/Form';
 import MovieDisplay from './components/MovieDisplay';
 
@@ -48,9 +48,6 @@ function App() {
               <Route path='/projects/movieform' element={<Form movieSearch={getMovie} setMovie={setMovie} />} />
 
               <Route path='/projects/movieform/favoritemovie' element={<MovieDisplay movie={movie} />} />
-                {/* <Form movieSearch={getMovie} setMovie={setMovie}/>
-                <MovieDisplay movie={movie}/> */}
-            {/* <Footer /> */}
           </Routes>
         </div>
       </div>

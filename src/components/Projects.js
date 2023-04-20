@@ -8,6 +8,7 @@ function Projects() {
             <div className="container">
                 <div style={{alignItems: 'center', marginTop: '4%', marginBottom: '5%'}}>
                     <h1><strong>Projects</strong></h1>
+                    <i>More to be added soon.</i>
                 </div>
 
                 <br />

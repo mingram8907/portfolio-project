@@ -1,6 +1,38 @@
 import {Navbar, Container, Nav} from 'react-bootstrap'
 import { Link } from 'react-router-dom';
 
+
+function NavBar() {
+  return (
+    <nav className='nav'>
+      <Link to='/'>
+        <div>Home</div>
+      </Link>
+
+      <Link to='/about'>
+        <div>About</div>
+      </Link>
+      
+      <Link to='/projects'>
+        <div>Projects</div>
+      </Link>
+    </nav>
+  )
+}
+
+export default NavBar
+
+
+
+
+
+
+
+
+
+
+
+
 // function NavBar() {
 //     return (
 //         <Navbar bg="dark" variant="dark" expand="lg" className='fixed-top'>
@@ -24,25 +56,3 @@ import { Link } from 'react-router-dom';
 //       </Navbar>
 //     )
 // }
-
-
-
-function NavBar() {
-  return (
-    <nav className='nav'>
-      <Link to='/'>
-        <div>Home</div>
-      </Link>
-
-      <Link to='/about'>
-        <div>About</div>
-      </Link>
-      
-      <Link to='/projects'>
-        <div>Projects</div>
-      </Link>
-    </nav>
-  )
-}
-
-export default NavBar
